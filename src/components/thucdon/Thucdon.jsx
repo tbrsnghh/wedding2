@@ -6,6 +6,7 @@ import MonAn from "./monAn";
 
 // Thành phần MenuItem
 const MenuItem = ({ name, isSelected, onClick }) => {
+  window.scrollTo(0, 0);
   return (
     <div
       className={`${styles.menuItem} ${isSelected ? styles.active : ""}`}

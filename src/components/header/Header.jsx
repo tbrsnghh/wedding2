@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./header.css";
-
+import styles from "./Header.module.css";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation(); 
@@ -35,17 +34,17 @@ const Header = () => {
   const isHomeOrThucdon = location.pathname === "/" || location.pathname === "/Thucdon" || location.pathname === "/Gioithieu";
 
   return (
-    <nav className={`navbar ${isScrolled || !isHomeOrThucdon ? "navbar-bg" : ""}`}>
-      <Link to="/" className="nav-logo">
+    <nav className={`${styles.navbar} ${isScrolled || !isHomeOrThucdon ? `${styles.navbarBg}` : ""}`}>
+      <Link to="/" className={`${styles.navLogo}`}>
         <img src="/images/2.png" alt="Nhà Hàng Tiệc Cưới Đông Á" />
       </Link>
-      <ul className="nav-menu">
-        <li><Link to="/" className="nav-link">TRANG CHỦ</Link></li>
-        <li><Link to="/Gioithieu" className="nav-link">SẢNH TIỆC</Link></li>
-        <li><Link to="/Thucdon" className="nav-link">THỰC ĐƠN</Link></li>
-        <li><Link to="/thiepcuoi" className="nav-link">TẠO THIỆP CƯỚI</Link></li>
-        <li><Link to="/sanpham" className="nav-link">ĐẶT LỊCH</Link></li>
-        <li><Link to="/Lienhe" className="nav-link">LIÊN HỆ</Link></li>
+      <ul className={`${styles.navMenu}`}>
+        <li><Link to="/" className={`${styles.navLink}`}>TRANG CHỦ</Link></li>
+        <li><Link to="/Gioithieu" className={`${styles.navLink}`}>SẢNH TIỆC</Link></li>
+        <li><Link to="/Thucdon" className={`${styles.navLink}`}>THỰC ĐƠN</Link></li>
+        <li><Link to="/thiepcuoi" className={`${styles.navLink}`}>TẠO THIỆP CƯỚI</Link></li>
+        <li><Link to="/booking" className={`${styles.navLink}`}>ĐẶT LỊCH</Link></li>
+        <li><Link to="/Lienhe" className={`${styles.navLink}`}>LIÊN HỆ</Link></li>
       </ul>
     </nav>
   );

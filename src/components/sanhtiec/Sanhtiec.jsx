@@ -10,6 +10,7 @@ import About from "./Gioithieu"; // Import About
 import styles from "./gioithieu2.module.css";
 
 const WeddingPage = () => {
+  window.scrollTo(0, 0);
   return (
     <div className={styles.pageContainer}>
      

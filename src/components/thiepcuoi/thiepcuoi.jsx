@@ -49,7 +49,7 @@ const ThiepCuoiHome = () => {
       bgColor: '#f0e4d7',
     },
   ];
-
+  window.scrollTo(0, 0);
   return (
     <div className={styles.homeContainer}>
       <header className={styles.header}>
