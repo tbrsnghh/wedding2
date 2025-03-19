@@ -1,0 +1,38 @@
+/* src/components/thucdon/bannermenu.module.css */
+.banner {
+  height: 70vh;
+  width: 100%;
+  background: no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative; /* Giữ relative để không thoát khỏi luồng layout */
+  z-index: 1; /* Đặt z-index thấp để không đè lên header nếu có */
+  
+}
+
+.bannerContent {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.banner h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  opacity: 0.9;
+}

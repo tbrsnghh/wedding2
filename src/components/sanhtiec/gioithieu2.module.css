@@ -1,0 +1,140 @@
+
+.pageContainer {
+  width: 100%;
+  overflow: hidden;
+ 
+}
+.banner {
+  position: relative;
+  width: 100%;
+  background: #f8f7f2; 
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+.bannerHeading {
+  margin-top: 60px;
+ 
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #B17F59;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Swiper container */
+.swiper {
+  width: 100%; /* Để ảnh không bị cắt khi hiển thị 3 ảnh */
+  margin: auto;
+}
+
+.weddingImage {
+  width: 100%; /* Mỗi ảnh chiếm toàn bộ phần tử SwiperSlide */
+  height: 450px; /* Tăng chiều cao ảnh */
+  object-fit: cover; /* Giữ nguyên tỉ lệ, không bị méo */
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 60px;
+}
+.weddingImage:hover {
+  transform: scale(1.1);
+}
+/* Tùy chỉnh dấu chấm điều hướng */
+.swiper-pagination-bullet {
+  background-color: white !important;
+  width: 12px;
+  height: 12px;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff6f61 !important;
+  width: 14px;
+  height: 14px;
+}
+
+
+/* Kiểu cho Gioithieu2 */
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Giữ video phủ kín */
+  z-index: -2; /* Đưa video xuống dưới nội dung */
+}
+
+.gioithieuContainer {
+  position: relative;
+  width: 100%;
+  padding: 150px 0px;
+  
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.icon {
+  margin-bottom: 30px;
+}
+
+
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  
+}
+
+.featureItem {
+  max-width: 250px;
+  text-align: left;
+}
+
+.number {
+  font-size: 2rem;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.featureTitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
+
+.description {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.5;
+}

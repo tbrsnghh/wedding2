@@ -1,0 +1,147 @@
+/* Container chính */
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 100px auto;
+  padding: 25px;
+ 
+  border-radius: 12px;
+ 
+  font-family: "Arial", sans-serif;
+}
+
+/* Tiêu đề */
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* Khu vực bình luận */
+.commentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Bình luận khách hàng (bên trái) */
+.comment {
+  display: flex;
+  align-items: flex-start;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Avatar khách hàng */
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Nội dung bình luận */
+.commentContent {
+  flex: 1;
+}
+
+.name {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+/* Đánh giá sao */
+.stars {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #ffcc00; /* Màu vàng */
+  margin-bottom: 5px;
+}
+
+.review {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Phản hồi từ quản lý (bên phẢi) */
+.reply {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background: #d1e7ff;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  align-self: flex-end;
+  margin-left: auto; 
+}
+
+/* Avatar quản lý */
+.adminAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 15px;
+}
+
+/* Nội dung phản hồi */
+.replyContent {
+  flex: 1;
+  text-align: right;
+}
+
+.adminName {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.replyText {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Animation */
+.comment {
+  animation: fadeInLeft 0.5s ease-out;
+}
+
+.reply {
+  animation: fadeInRight 0.5s ease-out;
+}
+
+/* Animation hiệu ứng */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

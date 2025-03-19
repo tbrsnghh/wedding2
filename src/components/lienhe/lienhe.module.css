@@ -1,0 +1,128 @@
+.contactContainer {
+    margin-top: 60px;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .contactWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contactForm,
+  .mapSection {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactTitle {
+    font-size: 2rem;
+    color: #d4a017;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .contactSubtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .input,
+  .textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .textarea {
+    resize: vertical;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-size: 0.9rem;
+  }
+  
+  .submitBtn {
+    padding: 12px 24px;
+    background-color: #d4a017;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitBtn:hover {
+    background-color: #b8860b;
+  }
+  
+  .mapTitle {
+    font-size: 2rem;
+    color: #d4a017;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .mapSubtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .mapImageWrapper {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .mapImage {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .mapImage:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .contactWrapper {
+      flex-direction: column;
+    }
+  
+    .contactForm,
+    .mapSection {
+      width: 100%;
+    }
+  }
