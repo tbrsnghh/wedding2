@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { registerUser } from "../redux/authSlice";
+import { registerUser } from "../../redux/authSlice";
 
 export default function Register() {
   const dispatch = useDispatch();

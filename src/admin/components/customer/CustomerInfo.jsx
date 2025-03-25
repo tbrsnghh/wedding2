@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { editMe } from "../../redux/authSlice";
+import { editMe } from "../../../redux/authSlice";
 
 export default function CustomerInfo() {
   const dispatch = useDispatch();
